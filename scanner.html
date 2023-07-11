@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            transform: translate(90%,20%);
+        }
+        button{
+            background-color: rgba(73, 154, 247, 0.808);
+      color: #fff;
+      border-radius: 5px;
+      width: 200px;
+    height: 35px;
+    border: none;
+    outline: none;
+        }
+        a{
+            padding-left: 1200px;
+            font-size: larger;
+        }
+        p{
+            padding-left: 50px;
+        }
+        button{
+            transform: translate(60%,10%);
+        }
+    </style>
+    <script>
+        function order(){
+            alert("Payment succesfull.");
+        }
+    </script>
+</head>
+<body>
+    <a href="index.html">home</a>
+    <img src="images/scanner.jpg" alt="scanner"><br>
+    <p>note: if payment done click payment completed</p>
+    <button onclick="order()">payment completed</button>
+</body>
+</html>

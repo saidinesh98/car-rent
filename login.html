@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CAR RENTAL</title>
+<style>
+    .logout{
+       font-size: 25px;
+       padding-left: 1000px;
+       display: block;
+    }
+    .information{
+    width: 330px;
+    height: 400px;
+    padding-top: 10px;
+    padding-left:30px ; 
+    border-radius: 20px;
+    top: 0;
+    text-align: left;
+    line-height: 35PX;
+    position: absolute;
+    background-color: rgba(194, 187, 187, 0.849);
+    transform: translate(250%,40%);
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h2{
+        color: rgb(70, 32, 32);
+    }
+    h3{
+        font-size: larger;
+        padding-left: 50px;
+        margin: 0 0 0 0;
+    }
+    h3,.logout{
+        display: inline;
+    }
+    .btn{
+    background-color: rgba(73, 154, 247, 0.808);
+   color: #fff;
+   border-radius: 5px;
+   width: 200px;
+    height: 35px;
+    }
+    select,.date{
+        width: 200px;
+        height: 30px;
+    }
+    .checkbox{
+        width: 20px;
+        height: 16px ;
+    }
+    .container{
+        position: relative;
+        padding-bottom: 65%;
+        height: 0;
+        overflow: hidden;
+        top: 0;
+
+    }
+    .container video{
+    position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .title{
+        position: absolute;
+        top: 0;
+        padding-top: 20px;
+        width: 100%;
+        height: 46px;
+        background-color: rgba(253, 191, 56, 0.993);
+    }
+</style>
+<script>
+    function pageRedirect() {
+        window.location.replace("vehicle.html");
+    } 
+</script>
+</head>
+<body>
+      <div class="container">
+        <video autoplay loop muted plays-inline src="images/car.mp4"></video>
+      </div>
+    <div  class="title">
+        <h3>RENT A CAR</h3>
+     <a class="logout" href="logout.php">logout</a>
+    </div>
+    <div class="information">
+        
+        <h2>BOOK A CAR</h2>
+        PICK UP <BR>
+        
+            <select name="" id="" required>
+                <option value="">choose office</option>
+                <option value="">hyderabad</option>
+                <option value="">chennai</option>
+                <option value="">banglore</option>
+            </select><br>
+            <input type="checkbox" name="" class="checkbox" >return to the same location<br>
+            <input type="date" placeholder="Pickup date" class="date"><br>
+            RETURN <BR>
+            <input type="date" name="" class="date" placeholder="Return date"><br><br>
+            <input type="button" onclick="pageRedirect()" value="FIND A VEHICLE" class="btn">         
+    </div>
+</body>
+</html>
